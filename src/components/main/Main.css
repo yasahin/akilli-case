@@ -1,0 +1,585 @@
+#app {
+    height: 100%;
+
+}
+
+
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --theme: #FF0000;
+    --textbold: #000;
+    --textlight: rgb(156, 155, 155);
+    --fullwidth: 100%;
+    --footercolor: #F9F9F9;
+    --border: #e1e3e6;
+
+}
+
+.main {
+    background-color: #fff;
+    height: 700px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+    width: 30px;
+    height: 30px;
+    margin-top: 150px;
+    background-color: var(--theme)
+}
+
+.swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+    margin-bottom: -10px;
+    margin-right: 50px;
+    z-index: 998;
+    left: 0;
+    width: 100%;
+    visibility: hidden;
+    display: block;
+}
+
+
+
+
+
+
+
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.mySwiper {
+    height: 400px;
+    width: 80%;
+}
+
+.swiper-wrapper {
+    height: 500px;
+}
+
+
+
+
+
+.main-menu {
+    width: 100%;
+    background-color: var(--theme)
+}
+
+.all-btn {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin-left: 50px;
+}
+
+.list-btn {
+
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    word-wrap: normal;
+    max-width: 250px;
+    cursor: pointer;
+
+}
+
+.list-info {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    color: var(--textlight)
+}
+
+.left-icon {
+    margin-left: 10px;
+
+}
+
+.list-state {
+    margin-left: 10px;
+    font-weight: bold;
+    color: var(--textbold);
+}
+
+
+.product-list {
+    margin-left: -250px;
+}
+
+
+
+
+.category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.category-info {
+    font-size: 13px;
+    font-weight: lighter;
+    margin-left: 7px;
+    padding: 10px;
+
+}
+
+
+.dropdown-cards {
+    width: 82%;
+    height: 35px;
+    z-index: 100;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    flex-direction: row;
+}
+
+.dropdown-info {
+    width: 300px;
+    border-style: solid;
+    border-radius: 0.1px;
+    border-width: 0.1px;
+    border-color: var(--border);
+    justify-content: space-between;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    font-weight: lighter;
+    color: gray;
+
+}
+
+.dropdown-text {
+    margin-left: 10px;
+}
+
+.icon-down2 {
+    margin-right: 5px;
+    color: var(--textbold);
+}
+
+.grid-icon1 {
+    height: 24px;
+    width: 24px;
+    margin: auto;
+    justify-content: flex-end;
+    position: relative;
+    cursor: pointer;
+    margin-right: -200px;
+}
+
+.grid-icon2 {
+    height: 20px;
+    width: 20px;
+    position: relative;
+    margin: auto;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+
+
+.all-cards {
+    width: 340px;
+    height: 350px;
+    background-color: white;
+    border-style: solid;
+    border-radius: 0.1px;
+    border-width: 0.1px;
+    border-color: var(--border);
+
+
+}
+
+.all-cards .product-image {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+}
+
+.all-cards .product-info {
+    font-size: 14px;
+    font-weight: 200;
+    color: gray;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+.all-cards .product-price {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.all-cards .hire {
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    font-weight: bold;
+}
+
+.all-cards .hire-price {
+
+    color: var(--textlight);
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    gap: 10px;
+    margin-right: 150px;
+
+
+
+}
+
+.number-area {
+    color: rgb(78, 78, 192);
+    font-size: 12px;
+    gap: 15px;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dif-number {
+    background-color: var(--theme);
+    width: 20px;
+    height: 20px;
+    border-radius: 99px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+@media screen and (max-width:1250px) {
+
+    .main {
+        background-color: #fff;
+        height: 400px;
+    }
+
+    .swiper-backface-hidden .swiper-slide {
+        transform: translateZ(0);
+        z-index: -998;
+    }
+
+    .swiper-slide.swiper-slide-active {
+        max-height: 300px;
+        margin-top: 0;
+    }
+
+    .swiper-slide.swiper-slide-next {
+        max-height: 300px;
+        margin-top: 0;
+
+    }
+
+    .swiper-slide.swiper-slide {
+        max-height: 300px;
+        margin-top: 0;
+    }
+
+
+
+
+    .main-menu {
+        width: 100%;
+        background-color: var(--theme)
+    }
+
+    .all-btn {
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-left: -3px;
+        flex-wrap: wrap;
+        height: 90px;
+        gap: 2px;
+    }
+
+    .list-btn {
+        height: 30px;
+        background-color: transparent;
+        color: white;
+        border: none;
+        font-size: 9px;
+        font-weight: bold;
+        word-wrap: break-word;
+        min-width: 130px;
+        cursor: pointer;
+        border-style: solid;
+        border-color: #fff;
+        border-width: 1px;
+        margin-right: 5px;
+        border-radius: 5px;
+    }
+
+    .list-info {
+        display: flex;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .left-icon {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+
+    }
+
+    .list-state {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+    }
+
+
+    .product-list {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+    }
+
+
+
+
+    .category {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+
+    }
+
+    .category-info {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+
+    }
+
+
+    .dropdown-cards {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .dropdown-info {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+
+    }
+
+    .dropdown-text {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .icon-down2 {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .grid-icon1 {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .grid-icon2 {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+    }
+
+    .all-cards {
+        width: 100px;
+        height: 160px;
+        background-color: white;
+        border-style: solid;
+        border-radius: 0.1px;
+        border-width: 0.1px;
+        border-color: var(--border);
+        position: absolute;
+        margin-top: -40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .all-cards .product-image {
+        width: 80%;
+        height: 80px;
+
+    }
+
+    .all-cards .product-info {
+        font-size: 8px;
+        font-weight: 200;
+        color: gray;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        margin-top: 1px;
+    }
+
+    .all-cards .product-price {
+        font-size: 10px;
+        font-weight: bold;
+        padding: 5px;
+        width: 80%;
+    }
+
+    .all-cards .hire {
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        font-weight: bold;
+        width: 80%;
+    }
+
+    .all-cards .hire-price {
+        font-weight: lighter;
+        color: var(--textlight);
+
+    }
+
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+    .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+        width: 10px;
+        height: 10px;
+
+        background-color: var(--theme)
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal,
+    .swiper-pagination-custom,
+    .swiper-pagination-fraction {
+        margin-bottom: 120px;
+        margin-right: 50px;
+        z-index: 998;
+        left: 0;
+
+    }
+
+    .number {
+        display: block;
+        visibility: hidden;
+
+        position: absolute;
+
+
+    }
+
+    .number-area {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+
+    }
+
+    .dif-number {
+        display: block;
+        visibility: hidden;
+        position: absolute;
+    }
+
+
+
+
+}
